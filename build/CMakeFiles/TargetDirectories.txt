@@ -1,0 +1,3 @@
+/Users/kaivzkekn/Desktop/I2P2/finale/I2P-FinalProject/build/CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
+/Users/kaivzkekn/Desktop/I2P2/finale/I2P-FinalProject/build/CMakeFiles/edit_cache.dir
+/Users/kaivzkekn/Desktop/I2P2/finale/I2P-FinalProject/build/CMakeFiles/rebuild_cache.dir

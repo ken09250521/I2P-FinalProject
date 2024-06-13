@@ -25,17 +25,25 @@ void StartScene::Initialize() {
     int halfH = h / 2;
     Engine::ImageButton* btn;
 
-    AddNewObject(new Engine::Label("Tower Defense", "pirulen.ttf", 120, halfW, halfH / 3 + 50, 10, 255, 255, 255, 0.5, 0.5));
+    AddNewObject(new Engine::Image("stage-select/startBG.jpeg", halfW, halfH, w, h, 0.5, 0.5));
 
-    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH / 2 + 200 , 400, 100);
+    AddNewObject(new Engine::Image("stage-select/title.png", halfW, halfH / 3 + 50, 1000, 200, 0.5, 0.5));
+
+    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH - 110, 400, 100);
     btn->SetOnClickCallback(std::bind(&StartScene::StageSelectOnClick, this, 1));
     AddNewControlObject(btn);
-    AddNewObject(new Engine::Label("Play", "pirulen.ttf", 48, halfW, halfH / 2 + 250, 0, 0, 0, 255, 0.5, 0.5));
+    AddNewObject(new Engine::Label("Play", "ferrum.otf", 54, halfW, halfH - 50, 0, 0, 0, 255, 0.5, 0.5));
 
-    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH * 3 / 2 - 50, 400, 100);
-    btn->SetOnClickCallback(std::bind(&StartScene::SettingsOnClick, this, 2));
+    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH + 40, 400, 100);
+    btn->SetOnClickCallback(std::bind(&StartScene::ShopOnClick, this, 2));
     AddNewControlObject(btn);
-    AddNewObject(new Engine::Label("Settings", "pirulen.ttf", 48, halfW, halfH * 3 / 2, 0, 0, 0, 255, 0.5, 0.5));
+    AddNewObject(new Engine::Label("Shop", "ferrum.otf", 54, halfW, halfH + 100 , 0, 0, 0, 255, 0.5, 0.5));
+
+    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH + 190, 400, 100);
+    btn->SetOnClickCallback(std::bind(&StartScene::SettingsOnClick, this, 3));
+    AddNewControlObject(btn);
+    AddNewObject(new Engine::Label("Settings", "ferrum.otf", 54, halfW, halfH + 250, 0, 0, 0, 255, 0.5, 0.5));
+
 
     bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
     
@@ -47,6 +55,9 @@ void StartScene::Terminate() {
 }
 void StartScene::StageSelectOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("stage-select");
+}
+void StartScene::ShopOnClick(int stage) {
+    Engine::GameEngine::GetInstance().ChangeScene("shop");
 }
 void StartScene::SettingsOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("settings");

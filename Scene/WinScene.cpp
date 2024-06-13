@@ -13,6 +13,7 @@
 #include "Engine/Point.hpp"
 #include "WinScene.hpp"
 #include "PlayScene.hpp"
+#include "Manage.hpp"
 
 extern int finalScore;
 
@@ -23,6 +24,8 @@ void WinScene::Initialize() {
 	int halfW = w / 2;
 	int halfH = h / 2;
 	
+	Manage::setCurWonStage(Manage::getInstance().getCurStage());
+
     PlayScene* playScene = dynamic_cast<PlayScene*>(Engine::GameEngine::GetInstance().GetScene("play"));
     if (playScene != nullptr) {
 		ffinalScore = playScene->finalScore;

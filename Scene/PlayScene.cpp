@@ -27,6 +27,7 @@
 #include "Enemy/BossEnemy.hpp"
 #include "Turret/TurretButton.hpp"
 #include "UI/Component/ImageButton.hpp"
+#include "Manage.hpp"
 
 
 bool PlayScene::DebugMode = false;
@@ -82,6 +83,7 @@ void PlayScene::Initialize() {
 
 void PlayScene::Terminate() {
 	finalScore = fscore;
+	Manage::setCurStage(MapId);
 	AudioHelper::StopBGM(bgmId);
 	AudioHelper::StopSample(deathBGMInstance);
 	deathBGMInstance = std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE>();
