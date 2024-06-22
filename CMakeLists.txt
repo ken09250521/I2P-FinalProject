@@ -17,18 +17,18 @@ add_executable(2024_I2P2_TowerDefense_with_answer
         Engine/Allegro5Exception.hpp
         Engine/AudioHelper.cpp
         Engine/AudioHelper.hpp
-        Bullet/Bullet.cpp
-        Bullet/Bullet.hpp
+#        Bullet/Bullet.cpp
+#        Bullet/Bullet.hpp
         Engine/Collider.cpp
         Engine/Collider.hpp
-        UI/Animation/DirtyEffect.cpp
-        UI/Animation/DirtyEffect.hpp
-        Enemy/Enemy.cpp
-        Enemy/Enemy.hpp
-        UI/Animation/ExplosionEffect.cpp
-        UI/Animation/ExplosionEffect.hpp
-        Bullet/FireBullet.cpp
-        Bullet/FireBullet.hpp
+#        UI/Animation/DirtyEffect.cpp
+#        UI/Animation/DirtyEffect.hpp
+        Character/Character.cpp
+        Character/Character.hpp
+#        UI/Animation/ExplosionEffect.cpp
+#        UI/Animation/ExplosionEffect.hpp
+#        Bullet/FireBullet.cpp
+#        Bullet/FireBullet.hpp
         Engine/GameEngine.cpp
         Engine/GameEngine.hpp
         Engine/Group.cpp
@@ -45,25 +45,25 @@ add_executable(2024_I2P2_TowerDefense_with_answer
         Engine/IScene.hpp
         UI/Component/Label.cpp
         UI/Component/Label.hpp
-        Bullet/LaserBullet.cpp
-        Bullet/LaserBullet.hpp
-        Turret/LaserTurret.cpp
-        Turret/LaserTurret.hpp
+#        Bullet/LaserBullet.cpp
+#        Bullet/LaserBullet.hpp
+#        Turret/LaserTurret.cpp
+#        Turret/LaserTurret.hpp
         Engine/LOG.cpp
         Engine/LOG.hpp
-        Scene/LoseScene.cpp
-        Scene/LoseScene.hpp
-        Turret/MachineGunTurret.cpp
-        Turret/MachineGunTurret.hpp
+#        Scene/LoseScene.cpp
+#        Scene/LoseScene.hpp
+#        Turret/MachineGunTurret.cpp
+#        Turret/MachineGunTurret.hpp
         main.cpp
-        Bullet/MissileBullet.cpp
-        Bullet/MissileBullet.hpp
-        Turret/MissileTurret.cpp
-        Turret/MissileTurret.hpp
-        UI/Animation/Plane.cpp
-        UI/Animation/Plane.hpp
-        Enemy/PlaneEnemy.cpp
-        Enemy/PlaneEnemy.hpp
+#        Bullet/MissileBullet.cpp
+#        Bullet/MissileBullet.hpp
+#        Turret/MissileTurret.cpp
+#        Turret/MissileTurret.hpp
+#        UI/Animation/Plane.cpp
+#        UI/Animation/Plane.hpp
+#        Character/PlaneEnemy.cpp
+#        Character/PlaneEnemy.hpp
         Scene/PlayScene.cpp
         Scene/PlayScene.hpp
         Engine/Point.cpp
@@ -72,22 +72,22 @@ add_executable(2024_I2P2_TowerDefense_with_answer
         Engine/Resources.hpp
         UI/Component/Slider.cpp
         UI/Component/Slider.hpp
-        Enemy/SoldierEnemy.cpp
-        Enemy/SoldierEnemy.hpp
+#        Character/SoldierEnemy.cpp
+#        Character/SoldierEnemy.hpp
         Engine/Sprite.cpp
         Engine/Sprite.hpp
         Scene/StageSelectScene.cpp
         Scene/StageSelectScene.hpp
-        Enemy/TankEnemy.cpp
-        Enemy/TankEnemy.hpp
-        Turret/Turret.cpp
-        Turret/Turret.hpp
-        Turret/TurretButton.cpp
-        Turret/TurretButton.hpp
-        Scene/WinScene.cpp
-        Scene/WinScene.hpp
-        Scene/ScoreboardScene.cpp
-        Scene/ScoreboardScene.hpp
+#        Character/TankEnemy.cpp
+#        Character/TankEnemy.hpp
+#        Turret/Turret.cpp
+#        Turret/Turret.hpp
+#        Turret/TurretButton.cpp
+#        Turret/TurretButton.hpp
+#        Scene/WinScene.cpp
+#        Scene/WinScene.hpp
+#        Scene/ScoreboardScene.cpp
+#        Scene/ScoreboardScene.hpp
         # TODO: [HACKATHON-1-SCENE] (2/4) Add the new scene source files here
         Scene/StartScene.cpp
         Scene/StartScene.h
@@ -99,10 +99,17 @@ add_executable(2024_I2P2_TowerDefense_with_answer
         Scene/Manage.hpp
 #        UI/Component/TextInput.cpp
 #        UI/Component/TextInput.hpp
-        Enemy/BossEnemy.cpp
-        Enemy/BossEnemy.hpp
-        Turret/Slime.cpp
-        Turret/Slime.hpp
+#        Character/BossEnemy.cpp
+#        Character/BossEnemy.hpp
+#        Turret/Slime.cpp
+#        Turret/Slime.hpp
+        Character/Warrior.cpp
+        Character/Warrior.hpp
+        Character/Rider.cpp
+        Character/Rider.hpp
+        Character/Giant.cpp
+        Character/Giant.hpp
+        
 )
 
 IF (WIN32)

@@ -3,7 +3,7 @@
 #include <string>
 
 #include "UI/Animation/DirtyEffect.hpp"
-#include "Enemy/Enemy.hpp"
+#include "Character/Character.hpp"
 #include "Engine/Group.hpp"
 #include "LaserBullet.hpp"
 #include "Scene/PlayScene.hpp"

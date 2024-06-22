@@ -2,15 +2,28 @@
 #define SPRITE_HPP
 #include <allegro5/color.h>
 #include <string>
-
+#include <vector>
+#include <unordered_map>
 #include "UI/Component/Image.hpp"
 #include "Engine/Point.hpp"
 
 namespace Engine {
+	enum class AnimationType{
+		leftMove,
+		rightMove,
+		leftAttack,
+		rightAttack
+	};
 	/// <summary>
 	/// Image that supports rotation, velocity, tint, and collision radius.
 	/// </summary>
 	class Sprite : public Image {
+	private:
+		std::unordered_map<AnimationType, std::vector<std::shared_ptr<ALLEGRO_BITMAP>>> animations;
+		AnimationType currentAnimationType;
+		int curFrames;
+		float frameDuration;
+		float frameTimer;
 	public:
 		// Rotation angle in radians.
 		float Rotation;
@@ -37,7 +50,7 @@ namespace Engine {
 		/// <param name="g">Color tint green value.</param>
 		/// <param name="b">Color tint blue value.</param>
 		/// <param name="a">Color tint alpha value.</param>
-		explicit Sprite(std::string img, float x, float y, float w = 0, float h = 0, float anchorX = 0.5f, float anchorY = 0.5f,
+		explicit Sprite(std::unordered_map<AnimationType, std::vector<std::string>> imgPaths, float x, float y, float frameDuration, float w = 0, float h = 0, float anchorX = 0.5f, float anchorY = 0.5f,
 			float rotation = 0, float vx = 0, float vy = 0, unsigned char r = 255, unsigned char g = 255, unsigned char b = 255, unsigned char a = 255);
 		/// <summary>
 		/// Draw to window display.
@@ -50,6 +63,7 @@ namespace Engine {
 		/// </summary>
 		/// <param name="deltaTime">Time elapsed since last update, can be used to calculate value changes.</param>
 		void Update(float deltaTime) override;
+		void SetAnimation(AnimationType type);
 	};
 }
 #endif // SPRITE_HPP

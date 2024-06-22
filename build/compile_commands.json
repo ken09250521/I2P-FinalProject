@@ -1,0 +1,164 @@
+[
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Allegro5Exception.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Allegro5Exception.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Allegro5Exception.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\AudioHelper.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\AudioHelper.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/AudioHelper.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Collider.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Collider.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Collider.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Character\\Character.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Character\\Character.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Character/Character.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Character.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\GameEngine.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\GameEngine.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/GameEngine.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Group.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Group.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Group.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\IControl.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\IControl.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/IControl.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\UI\\Component\\Image.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\UI\\Component\\Image.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/UI/Component/Image.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\UI\\Component\\ImageButton.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\UI\\Component\\ImageButton.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/UI/Component/ImageButton.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\IObject.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\IObject.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/IObject.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\IScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\IScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/IScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\UI\\Component\\Label.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\UI\\Component\\Label.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/UI/Component/Label.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\LOG.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\LOG.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/LOG.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\main.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\main.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/main.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\PlayScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\PlayScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/PlayScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Point.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Point.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Point.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Resources.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Resources.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Resources.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\UI\\Component\\Slider.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\UI\\Component\\Slider.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/UI/Component/Slider.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Engine\\Sprite.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Engine\\Sprite.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Engine/Sprite.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\StageSelectScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\StageSelectScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/StageSelectScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\StartScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\StartScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/StartScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\SettingsScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\SettingsScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/SettingsScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\ShopScene.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\ShopScene.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/ShopScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/ShopScene.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Scene\\Manage.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Scene\\Manage.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/Manage.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/Manage.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Character\\Warrior.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Character\\Warrior.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Character/Warrior.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Warrior.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Character\\Rider.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Character\\Rider.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Character/Rider.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Rider.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/build",
+  "command": "C:\\Users\\Ken\\llvm-mingw-20240417-msvcrt-x86_64\\llvm-mingw-20240417-msvcrt-x86_64\\bin\\clang++.exe  @CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\2024_I2P2_TowerDefense_with_answer.dir\\Character\\Giant.cpp.obj -c C:\\Users\\Ken\\Documents\\GitHub\\I2P-FinalProject\\Character\\Giant.cpp",
+  "file": "C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Character/Giant.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Giant.cpp.obj"
+}
+]
