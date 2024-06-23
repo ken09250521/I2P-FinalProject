@@ -903,16 +903,12 @@ CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Character.cpp.obj: \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/IObject.hpp \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/list \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/Point.hpp \
-  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./UI/Animation/DirtyEffect.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Character/Character.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Scene/PlayScene.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/IScene.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/Group.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/IControl.hpp \
-  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./UI/Animation/ExplosionEffect.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/GameEngine.hpp \
-  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/Resources.hpp \
-  C:/allegro/include/allegro5/allegro_font.h \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/LOG.hpp \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/fstream \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/filesystem \
@@ -961,4 +957,10 @@ CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Character/Character.cpp.obj: \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/__filesystem/path_iterator.h \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/__filesystem/u8path.h \
-  C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/iostream
+  C:/Users/Ken/llvm-mingw-20240417-msvcrt-x86_64/llvm-mingw-20240417-msvcrt-x86_64/include/c++/v1/iostream \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/Resources.hpp \
+  C:/allegro/include/allegro5/allegro_font.h \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Character/Warrior.hpp \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Character/Character.hpp \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Character/Rider.hpp \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Character/Giant.hpp

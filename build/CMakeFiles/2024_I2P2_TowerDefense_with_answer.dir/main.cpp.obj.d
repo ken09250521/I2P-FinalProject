@@ -905,6 +905,8 @@ CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.obj: \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/IObject.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/./Engine/Point.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/StageSelectScene.hpp \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/WinScene.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/StartScene.h \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/SettingsScene.hpp \
+  C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/ScoreboardScene.hpp \
   C:/Users/Ken/Documents/GitHub/I2P-FinalProject/Scene/ShopScene.hpp
