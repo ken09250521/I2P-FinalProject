@@ -37,7 +37,7 @@ void StageSelectScene::Initialize() {
         AddNewObject(new Engine::Label("2", "ferrum.otf", 48, halfW - 135, halfH / 2 + 10, 0, 0, 0, 255, 0.5, 0.5));
         if (_curWonStage >= 2){
             btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW, halfH / 2 - 50, 100, 100, 0.5);
-            btn->SetOnClickCallback(std::bind(&StageSelectScene::PlayOnClick, this, 3));    
+            btn->SetOnClickCallback(std::bind(&StageSelectScene::PlayOnClick, this, 3));
             AddNewControlObject(btn);
             AddNewObject(new Engine::Label("3", "ferrum.otf", 48, halfW + 15, halfH / 2 + 10, 0, 0, 0, 255, 0.5, 0.5));
            if (_curWonStage >= 3){

@@ -7,8 +7,8 @@
 #include "Engine/Resources.hpp"
 
 namespace Engine {
-	Image::Image(std::string img, float x, float y, float w, float h, float anchorX, float anchorY, float CollisionRadius, float AttackRadius) :
-		IObject(x, y, w, h, anchorX, anchorY, CollisionRadius, AttackRadius) {
+	Image::Image(std::string img, float x, float y, float w, float h, float anchorX, float anchorY) :
+		IObject(x, y, w, h, anchorX, anchorY) {
 		if (Size.x == 0 && Size.y == 0) {
 			bmp = Resources::GetInstance().GetBitmap(img);
 			Size.x = GetBitmapWidth();

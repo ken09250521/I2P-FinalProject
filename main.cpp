@@ -3,11 +3,7 @@
 // You can register your scenes here, and start the game.
 #include "Engine/GameEngine.hpp"
 #include "Engine/LOG.hpp"
-<<<<<<< Updated upstream
 #include "Scene/LoseScene.hpp"
-=======
-//#include "Scene/LoseScene.hpp"
->>>>>>> Stashed changes
 #include "Scene/PlayScene.hpp"
 #include "Scene/StageSelectScene.hpp"
 #include "Scene/WinScene.hpp"
@@ -25,15 +21,9 @@ int main(int argc, char **argv) {
 	game.AddNewScene("stage-select", new StageSelectScene());
 	game.AddNewScene("settings", new SettingsScene());
 	game.AddNewScene("play", new PlayScene());
-<<<<<<< Updated upstream
 	game.AddNewScene("lose", new LoseScene());
 	game.AddNewScene("win", new WinScene());
 	game.AddNewScene("scoreboard", new ScoreboardScene());
-=======
-	//game.AddNewScene("lose", new LoseScene());
-	//game.AddNewScene("win", new WinScene());
-	//game.AddNewScene("scoreboard", new ScoreboardScene());
->>>>>>> Stashed changes
 	game.AddNewScene("shop", new ShopScene());
 
     // DONE TODO: [HACKATHON-1-SCENE] (4/4): Change the start scene

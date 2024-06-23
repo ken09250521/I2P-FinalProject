@@ -6,16 +6,9 @@
 #include "Sprite.hpp"
 
 namespace Engine {
-<<<<<<< Updated upstream
 	Sprite::Sprite(std::string img, float x, float y, float w, float h, float anchorX, float anchorY,
 		float rotation, float vx, float vy, unsigned char r, unsigned char g, unsigned char b, unsigned char a) :
 		Image(img, x, y, w, h, anchorX, anchorY), Rotation(rotation), Velocity(Point(vx, vy)), Tint(al_map_rgba(r, g, b, a)) {
-=======
-	Sprite::Sprite(std::string img, float x, float y, float CollisionRadius, float AttackRadius, float w, float h, float anchorX, float anchorY,
-		float rotation, float vx, float vy, unsigned char r, unsigned char g, unsigned char b, unsigned char a) :
-		
-		Image(img, x, y, w, h, anchorX, anchorY, CollisionRadius, AttackRadius), Rotation(rotation), Velocity(Point(vx, vy)), Tint(al_map_rgba(r, g, b, a)) {
->>>>>>> Stashed changes
 	}
 	void Sprite::Draw() const {
 		al_draw_tinted_scaled_rotated_bitmap(bmp.get(), Tint, Anchor.x * GetBitmapWidth(), Anchor.y * GetBitmapHeight(),
@@ -25,8 +18,4 @@ namespace Engine {
 		Position.x += Velocity.x * deltaTime;
 		Position.y += Velocity.y * deltaTime;
 	}
-<<<<<<< Updated upstream
 };
-=======
-};
->>>>>>> Stashed changes

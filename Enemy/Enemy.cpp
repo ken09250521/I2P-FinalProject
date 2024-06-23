@@ -11,23 +11,18 @@
 #include "Enemy.hpp"
 #include "UI/Animation/ExplosionEffect.hpp"
 #include "Engine/GameEngine.hpp"
-#include "Engine/Resources.hpp"
 #include "Engine/Group.hpp"
 #include "Engine/Point.hpp"
 #include "Engine/IScene.hpp"
 #include "Engine/LOG.hpp"
 #include "Scene/PlayScene.hpp"
-<<<<<<< Updated upstream:Enemy/Enemy.cpp
 #include "Turret/Turret.hpp"
 #include "Turret/Slime.hpp"
 #include "BossEnemy.hpp"
-=======
->>>>>>> Stashed changes:Character/Character.cpp
 
 PlayScene* Enemy::getPlayScene() {
 	return dynamic_cast<PlayScene*>(Engine::GameEngine::GetInstance().GetActiveScene());
 }
-<<<<<<< Updated upstream:Enemy/Enemy.cpp
 void Enemy::OnExplode() {
 	getPlayScene()->EffectGroup->AddNewObject(new ExplosionEffect(Position.x, Position.y));
 	std::random_device dev;
@@ -43,16 +38,6 @@ Enemy::Enemy(std::string img, float x, float y, float radius, float speed, float
 	Engine::Sprite(img, x, y), speed(speed), hp(hp), money(money) {
 	CollisionRadius = radius;
 	reachEndTime = 0;
-=======
-
-Character::Character(std::string imgPath, float x, float y, bool isAlly, float Collradius, float Atkradius, float w, float h, float speed, float hp, float attack, int money) : //image, size(x, y), effect radius, speed, hp,
-	Engine::Sprite(imgPath, x, y, Collradius, Atkradius, w, h), speed(speed), hp(hp), attack(attack), money(money) {
-	CollisionRadius = Collradius;
-	AttackRadius = Atkradius;
-	curState = Walk;
-	curTicks = 0;
-	Ally = isAlly;
->>>>>>> Stashed changes:Character/Character.cpp
 }
 void Enemy::Hit(float damage) {
 	hp -= damage;
@@ -67,29 +52,10 @@ void Enemy::Hit(float damage) {
 		getPlayScene()->EnemyGroup->RemoveObject(objectIterator);
 		getPlayScene()->enemyDeathCount();
 
-<<<<<<< Updated upstream:Enemy/Enemy.cpp
 		AudioHelper::PlayAudio("explosion.wav");
 	}
 }
 void Enemy::UpdatePath(const std::vector<std::vector<int>>& mapDistance) {
-=======
-void Character::LoadImages(const std::vector<std::string>& LAP, const std::vector<std::string>& RAP, const std::vector<std::string>& LMP, const std::vector<std::string>& RMP){
-	for (const auto& atkpath : LAP) {
-		leftAtkBmps.push_back(Engine::Resources::GetInstance().GetBitmap(atkpath));
-	}
-	for (const auto& atkpath : RAP) {
-		rightAtkBmps.push_back(Engine::Resources::GetInstance().GetBitmap(atkpath));
-	}
-	for (const auto& movepath : LMP) {
-		leftMoveBmps.push_back(Engine::Resources::GetInstance().GetBitmap(movepath));
-	}
-	for (const auto& movepath : RMP) {
-		rightMoveBmps.push_back(Engine::Resources::GetInstance().GetBitmap(movepath));
-	}
-}
-
-void Character::UpdatePath(const std::vector<std::vector<int>>& mapDistance, bool isAlly) {
->>>>>>> Stashed changes:Character/Character.cpp
 	int x = static_cast<int>(floor(Position.x / PlayScene::BlockSize));
 	int y = static_cast<int>(floor(Position.y / PlayScene::BlockSize));
 	if (x < 0) x = 0;
@@ -120,16 +86,12 @@ void Character::UpdatePath(const std::vector<std::vector<int>>& mapDistance, boo
 		path[num] = pos;
 		num--;
 	}
-	Engine::Point endGridPoint = isAlly ? PlayScene::AllyEndGridPoint : PlayScene::EnemyEndGridPoint;
-    path[0] = endGridPoint;
+	path[0] = PlayScene::EndGridPoint;
 }
 void Enemy::Update(float deltaTime) {
 	// Pre-calculate the velocity.
-	float remainSpeed = 0;
-	if (curState == Walk)
-		remainSpeed = speed * deltaTime;
+	float remainSpeed = speed * deltaTime;
 
-<<<<<<< Updated upstream:Enemy/Enemy.cpp
 	auto turrets = getPlayScene()->TowerGroup->GetObjects();
 
 	auto enemies = getPlayScene()->EnemyGroup->GetObjects();
@@ -186,125 +148,12 @@ void Enemy::Update(float deltaTime) {
 		else {
 			Velocity = normalized * remainSpeed / deltaTime;
 			remainSpeed = 0;
-=======
-	auto enemies = getPlayScene()->EnemyGroup->GetObjects();
-	auto allies = getPlayScene()->CharacterGroup->GetObjects();
-
-	bool shouldStop = false;
-
-	if (Ally) {
-		for (auto& obj : allies){
-			if (shouldStop) break;
-			for (auto& otherObj : enemies) {
-				Engine::Point diff = obj->Position - otherObj->Position;
-				float distance = diff.Magnitude();
-				//printf("Ally at (%f, %f) checking Enemy at (%f, %f), Distance: %f\n", obj->Position.x, obj->Position.y, otherObj->Position.x, otherObj->Position.y, distance);
-				if (distance <= AttackRadius) {
-					remainSpeed = 0;
-					curState = Attack;
-					shouldStop = true;
-					break;
-				}
-			}
->>>>>>> Stashed changes:Character/Character.cpp
 		}
 	}
-	if (!Ally){
-		for (auto& obj : enemies){
-			if (shouldStop) break;
-			for (auto& otherObj : allies) {
-				Engine::Point diff = obj->Position - otherObj->Position;
-				float distance = diff.Magnitude();
-				if (distance <= AttackRadius) {
-					remainSpeed = 0;
-					curState = Attack;
-					shouldStop = true;
-					break;
-				}
-			}
-
-		}
-	}
-	
-	curTicks += deltaTime;
-	if (Ally){
-		if (curState == Walk){
-			if (curTicks >= animationSpan) {
-				// Loop the animation
-				curTicks = fmod(curTicks, animationSpan);
-			}
-			int phase = floor(curTicks / animationSpan * leftMoveBmps.size());
-			// Ensure phase is within the bounds of the frames vector
-			phase = std::min(phase, static_cast<int>(leftMoveBmps.size()) - 1);
-			bmp = leftMoveBmps[phase];
-		}	
-		else if (curState == Attack){
-			if (curTicks >= animationSpan) {
-				// Loop the animation
-				curTicks = fmod(curTicks, animationSpan);
-			}
-			int phase = floor(curTicks / animationSpan * leftAtkBmps.size());
-			// Ensure phase is within the bounds of the frames vector
-			phase = std::min(phase, static_cast<int>(leftAtkBmps.size()) - 1);
-			bmp = leftAtkBmps[phase];
-		}	
-	} else {
-		if (curState == Walk){
-			if (curTicks >= animationSpan) {
-				// Loop the animation
-				curTicks = fmod(curTicks, animationSpan);
-			}
-			int phase = floor(curTicks / animationSpan * rightMoveBmps.size());
-			// Ensure phase is within the bounds of the frames vector
-			phase = std::min(phase, static_cast<int>(rightMoveBmps.size()) - 1);
-			bmp = rightMoveBmps[phase];
-		}	
-		else if (curState == Attack){
-			if (curTicks >= animationSpan) {
-				// Loop the animation
-				curTicks = fmod(curTicks, animationSpan);
-			}
-			int phase = floor(curTicks / animationSpan * rightAtkBmps.size());
-			// Ensure phase is within the bounds of the frames vector
-			phase = std::min(phase, static_cast<int>(rightAtkBmps.size()) - 1);
-			bmp = rightAtkBmps[phase];
-		}	
-	}
-	
-	if (path.empty()) {
-		// Reach end point.
-		//Hit(hp);
-		//getPlayScene()->Hit();
-		//reachEndTime = 0;
-		return;
-	}
-	Engine::Point target = path.back() * PlayScene::BlockSize + Engine::Point(PlayScene::BlockSize / 2, PlayScene::BlockSize / 2);
-	Engine::Point vec = target - Position;
-	// Add up the distances:
-	// 1. to path.back()
-	// 2. path.back() to border
-	// 3. All intermediate block size
-	// 4. to end point
-	Engine::Point normalized = vec.Normalize();
-	if (remainSpeed - vec.Magnitude() > 0) {
-		Position = target;
-		path.pop_back();
-		remainSpeed -= vec.Magnitude();
-	}
-	else {
-		Velocity = normalized * remainSpeed / deltaTime;
-		remainSpeed = 0;
-	}
-
-	
+	Rotation = atan2(Velocity.y, Velocity.x);
 	Sprite::Update(deltaTime);
 }
-<<<<<<< Updated upstream:Enemy/Enemy.cpp
 void Enemy::Draw() const {
-=======
-
-void Character::Draw() const {
->>>>>>> Stashed changes:Character/Character.cpp
 	Sprite::Draw();
 	if (PlayScene::DebugMode) {
 		// Draw collision radius.
